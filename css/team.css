@@ -1,0 +1,58 @@
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+/* Карточка фиксированной ширины на всех брейкпоинтах */
+.team-item {
+  width: 264px;
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-card-content {
+  padding: 32px 16px;
+}
+
+.team-subtitle,
+.team-text {
+  text-align: center;
+}
+
+.team .socials-list {
+  margin-top: 8px;
+}
+
+.team .socials-link:hover,
+.team .socials-link:focus {
+  background-color: #404bbf;
+}
+
+/* ---------- Tablet ---------- */
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+}
+
+/* ---------- Desktop ---------- */
+@media screen and (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
